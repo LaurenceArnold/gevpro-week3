@@ -10,7 +10,7 @@ def main(argv):
     tree = ET.parse(bestand)
     root = tree.getroot()
 
-
+    # vind via de points de bijhorende data
     for point in root.findall('POINT'):
         Bottom=int(point.find('BOTTOM_HZ').text)
         Top=int(point.find('TOP_HZ').text)
