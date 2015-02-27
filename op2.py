@@ -16,5 +16,8 @@ def main():
         sterven=resultaat2.sterven.split()
         [json.dump(taal,outputfile) for i in bloed if i in sterven]
 
+    data.close()
+    outputfile.close()
+
 if __name__== "__main__":
     main()
