@@ -8,7 +8,7 @@ from collections import namedtuple
 def main():
     data=open('blood-die.json','r')
     bestand=json.load(data)
-    outputfile=open('test.json','w')
+    outputfile=open('blood_and_die.json','w')
 
     #maak een namedtuple
     resultaat=namedtuple('resultaat',('Taal','Classificatie','bloed','sterven'))
