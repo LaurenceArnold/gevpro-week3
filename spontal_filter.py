@@ -1,5 +1,6 @@
 #!/usr/local/bin/python3
-
+# opdracht 1 van Gevorderd Programmeren week 3
+# Gemaakt door Laurence Arnold op 27 februari 2015
 import sys
 import xml.etree.ElementTree as ET
 
@@ -10,7 +11,7 @@ def main(argv):
     tree = ET.parse(bestand)
     root = tree.getroot()
 
-
+    # Via het point de waardes benaderen
     for point in root.findall('POINT'):
         Bottom=int(point.find('BOTTOM_HZ').text)
         Top=int(point.find('TOP_HZ').text)
