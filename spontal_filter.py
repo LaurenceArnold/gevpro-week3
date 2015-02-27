@@ -1,4 +1,6 @@
 #!/usr/local/bin/python3
+# opdracht 1 van gevorderd programmeren
+# Gemaakt door Laurence Arnold op 26 februari 2015
 
 import sys
 import xml.etree.ElementTree as ET
