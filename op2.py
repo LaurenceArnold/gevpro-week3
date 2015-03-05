@@ -4,11 +4,12 @@
 
 import json
 from collections import namedtuple
+import sys
 
-def main():
-    data=open('blood-die.json','r')
+def main(argv):
+    data=open(argv[1],'r')
     bestand=json.load(data)
-    outputfile=open('blood_and_die_result.json','w')
+    outputfile=open(argv[2],'w')
 
     #maak een namedtuple
     resultaat=namedtuple('resultaat',('Taal','Classificatie','bloed','sterven'))
@@ -24,4 +25,4 @@ def main():
     outputfile.close()
 
 if __name__== "__main__":
-    main()
+    main(sys.argv)
